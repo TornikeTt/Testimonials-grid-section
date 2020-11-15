@@ -1,0 +1,279 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(15, 60px);
+    grid-gap:15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color:whitesmoke;
+}
+
+.daniel{
+    grid-column-start:2;
+    grid-column-end: 6;
+    grid-row-start:2;
+    grid-row-end:6;
+    background-color: hsla(263, 55%, 50% , 0.5);
+    border-radius: 10px; 
+    perspective: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.jonathan{
+    grid-column-start: 6;
+    grid-column-end:8;
+    grid-row-start:2;
+    grid-row-end:6;
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 10px;
+    perspective: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.kira{
+    grid-column-start:8;
+    grid-column-end:10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    background-color: white;
+    border-radius: 10px;
+    perspective: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+
+.jeanette{
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:6;
+    grid-row-end:10;
+    background-color: white;
+    border-radius: 10px;
+    perspective: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.patrick{
+    grid-column-start:4;
+    grid-column-end:8;
+    grid-row-start:6;
+    grid-row-end: 10;
+    background-color:hsl(219, 29%, 14%);
+    border-radius: 10px;
+    perspective: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.pattern{
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 380px;
+    z-index: -1;
+    width: 95px;
+}
+/*daniel*/
+.daniel-box{
+    display:flex;
+    flex-direction:column;
+    width: 90%;
+    height: 95%;
+    margin:auto;
+    justify-content: space-evenly;
+}
+/*daniel*/
+.person{
+    display:flex;
+    align-items:center;
+}
+.person img{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+}
+.person-name{
+    margin-left: 6px;
+}
+.person-name h3{
+    color:white;
+}
+.person-name p{
+    margin-top: 4px;
+    color:grey;
+
+}
+.text h3{
+    color:white;
+    font-size: 22px;
+}
+.text p{
+    margin-top: 10px;
+    font-size:15px;
+    opacity: 0.5;
+}
+
+
+.box{
+    display:flex;
+    flex-direction:column;
+    width: 80%;
+    height: 95%;
+    margin:auto;
+    justify-content: space-evenly;
+}
+
+/*jonathan change*/
+.jonathan-text h3{
+    color:white;
+    font-size: 20px;
+}
+.jonathan-text p{
+    margin-top: 10px;
+    font-size:15px;
+    opacity: 0.5;
+    color:white;
+}
+/*jonathan change*/
+
+
+/*kira change*/
+.person-name-kira{
+    margin-left: 6px;
+}
+.person-name-kira p{
+    color:grey;
+}
+.text-kira h3{
+    font-size: 22px;
+}
+.text-kira p{
+    margin-top: 10px;
+    font-size:15px;
+    opacity: 0.5;
+}
+/*kira change*/
+
+
+/*jeanette change*/
+.person-name-jeanette{
+    margin-left: 6px;
+}
+.person-name-jeanette p {
+    color:grey;
+}
+.jeanette-text h3{
+    color:grey;
+    font-size: 25px;
+}
+.jeanette-text p {
+    margin-top: 10px;
+    font-size:15px;
+    opacity: 0.5;
+    color:grey;
+}
+/*jeanette change*/
+
+
+/*patrick change*/
+.patrick-box{
+    display:flex;
+    flex-direction:column;
+    width: 90%;
+    height: 95%;
+    margin:auto;
+    justify-content: space-evenly;
+}
+.patrick-text h3{
+    color:white;
+    font-size: 20px;
+}
+.patrick-text p{
+    margin-top: 10px;
+    font-size:15px;
+    opacity: 0.5;
+    color:grey;
+}
+
+
+
+@media (max-width: 375px){
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        overflow:auto;
+    }
+
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(33, 50px);
+        grid-row-gap: 20px;
+    }
+    .daniel{
+        grid-column-start: 2;
+        grid-column-end:12;
+        grid-row-start:2;
+        grid-row-end:10;
+        border-radius:2;
+    }
+
+    .text h3{
+        margin-top: 10px;
+        font-size:22px;
+    }
+    .text p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .pattern{
+        margin-left:170px;
+        margin-top:-400px;
+        width: 120px;
+
+    }
+
+    .jonathan{
+        grid-column-start:2;
+        grid-column-end:12;
+        grid-row-start:10;
+        grid-row-end:14;
+        border-radius:2;
+    }
+    
+    .jeanette{
+        grid-column-start:2;
+        grid-column-end:12;
+        grid-row-start:14;
+        grid-row-end:18;
+        border-radius:2;
+    }
+
+    .patrick{
+        grid-column-start: 2;
+        grid-column-end:12;
+        grid-row-start:18;
+        grid-row-end:25;
+        border-radius:2;
+    }
+
+    .kira{
+        grid-column-start: 2;
+        grid-column-end:12;
+        grid-row-start:25;
+        grid-row-end:33;
+        border-radius:2;
+    }
+    
+    .text-kira h3{
+        font-size:16px;
+        color:grey;
+    }
+}
